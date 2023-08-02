@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "declarationDir": "./types",
+    "emitDeclarationOnly": false,
+    "emitDecoratorMetadata": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "resolveJsonModule": false,
+    "rootDir": "typechain-types",
+    "noImplicitAny": true, 
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "./dev",
+    "./types",
+    "./tests",
+    "./dist",
+    "./*.js",
+    "./*.d.ts"
+  ],
+  "include": [
+    "typechain-types"
+  ]
+}

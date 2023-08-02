@@ -1,0 +1,55 @@
+pre:not([class]) > code:not([class]) {
+  color: darkslategrey !important;
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+#markdown_area img {
+  max-width: 100%;
+  height: auto;
+}
+
+.proposal-markdown{
+  color: #979797;
+}
+
+.proposal-comment .markdown-body {
+  color: white!important;
+}
+
+.markdown-body {
+  color: #979797;
+}
+
+.proposal-markdown li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #979797;
+}
+
+.editor-container li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+}
+
+
+
+.json-box {
+  font-size: 12px !important;
+}
+
+.full-screen-json #markdown_area {
+  height: 500px;
+}

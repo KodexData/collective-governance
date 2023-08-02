@@ -1,0 +1,14 @@
+.full {
+  z-index: 15000!important;
+  min-height: 100vh!important;
+}
+
+.voting-md-editor .button-type-fullscreen {
+  display: none!important;
+}
+
+.rc-md-editor ::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  border: 1px;
+}

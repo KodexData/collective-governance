@@ -1,0 +1,33 @@
+{
+  "overrides": [
+    {
+      "files": "*.{ts,tsx,cjs}",
+      "options": {
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "endOfLine": "lf",
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": true,
+        "printWidth": 130,
+        "proseWrap": "preserve",
+        "quoteProps": "as-needed",
+        "requirePragma": false,
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "useTabs": false,
+        "vueIndentScriptAndStyle": false,
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": "*.{json,yml,yaml}",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

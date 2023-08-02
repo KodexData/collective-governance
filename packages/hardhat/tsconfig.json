@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "./",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "rootDirs": [
+      "./scripts",
+      "./test",
+      "./typechain-types",
+      "./helpers"
+    ]
+  },
+  "include": [
+    "./tasks",
+    "./scripts",
+    "./test",
+    "./typechain-types",
+    "./helpers",
+    "helpers/logger.types.ts",
+    ".build/hardhat.config.ts"
+  ],
+  "exclude": [
+    "./.dev",
+    "./typechain-types/**.js",
+    "./meta"
+  ],
+  "files": [
+    "./hardhat.config.ts"
+  ]
+}

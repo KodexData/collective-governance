@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "name": "collective-governance",
+  "version": "0.0.1",
+  "description": "Fully Decentralized EVM on-chain voting environment that implements OpenZeppelin governance contracts",
+  "packageManager": "yarn@3.6.1",
+  "engines": {
+    "npm": "please-use-yarn",
+    "node": ">=14.0.0",
+    "yarn": ">=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KodexData/collective-governance.git"
+  },
+  "author": "WizardsOrb <wizardsorb@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KodexData/collective-governance/issues"
+  },
+  "homepage": "https://github.com/KodexData/collective-governance#readme",
+  "contributors": [
+    "pseudodeterminist <pseudodeterminist@kodexdata.systems> (https://kodexdata.systems)",
+    "oldcryptogeek <oldcryptogeek@kodexdata.systems> (https://kodexdata.systems)",
+    "wizardsorb <wizardsorb@kodexdata.systems> (https://kodexdata.systems)",
+    "brittanneica <brittanneica@kodexdata.systems> (https://kodexdata.systems)"
+  ],
+  "keywords": [
+    "hardhat",
+    "typechain",
+    "ethers",
+    "typescript",
+    "openzeppelin",
+    "kodexdata.systems",
+    "collective-governance"
+  ],
+  "scripts": {
+    "build": "make all",
+    "test": "yarn workspace @collective-governance/hardhat test",
+    "start": "yarn workspace @collective-governance/playground dev",
+    "build:packages": "yarn build:hardhat:types && yarn build:hardhat && yarn build:api",
+    "build:hardhat:types": "yarn workspace @collective-governance/hardhat compile",
+    "build:hardhat": "yarn workspace @collective-governance/hardhat build:rollup",
+    "build:playground": "yarn workspace @collective-governance/playground build",
+    "build:api-evm": "yarn workspace @collective-governance/api-evm build",
+    "cloc": "npx cloc packages/*/{source,contracts,test,tests,helpers,scripts,tasks} --exclude-ext=json,yaml,xml,svg,md,css,js,cjs"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  }
+}
